@@ -15,7 +15,7 @@ A simple 4-bit processor built from scratch to understand CPU microarchitecture 
 - Simple control path with a custom 4-bit instruction format
 - Clocked, synchronous top-level integration
 
-📁 [`4bit-cpu/`](./4bit-cpu)
+📁 [`cpu/`](./cpu)
 
 This CPU was synthesized using **OpenLane** and successfully passed the full RTL-to-GDS flow on Sky130.
 
@@ -28,7 +28,7 @@ A parameterizable UART transmitter designed for ASIC integration. It includes:
 - FSM-based implementation
 - `tx_ready` and `tx` outputs for clean interfacing
 
-📁 [`uart-tx/`](./uart-tx)
+📁 [`uart_tx/`](./uart_tx)
 
 The UART TX module has been verified through simulation and synthesized with **OpenLane**, producing a GDSII layout ready for chip integration.
 
