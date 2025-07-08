@@ -52,6 +52,8 @@ initial begin
     raddr1 = 32'd10;
     raddr2 = 32'd20;
     $display("Out 1: %d Out 2: %d", rdata1, rdata2);
+
+    $finish;
 end
 
 endmodule

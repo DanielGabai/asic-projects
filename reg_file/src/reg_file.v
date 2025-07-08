@@ -14,10 +14,11 @@ module reg_file (
 
 reg [31:0] register [31:0];
 
-assign rdata1 = (raddr1 = 5'd0) ? 32'b0 : register[raddr1];
-assign rdata2 = (raddr2 = 5'd0) ? 32'b0 : register[raddr2];
+assign rdata1 = register[raddr1];
+assign rdata2 = register[raddr2];
 
 always @(posedge clk) begin
+    register[0] <= 32'd0;
     if (we == 1'b1 && waddr != 5'd0) begin
         register[waddr] <= wdata;
     end
